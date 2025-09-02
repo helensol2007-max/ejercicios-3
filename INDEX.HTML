@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - lista de productos</title>
+</head>
+<style>
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        display: flex; /*flexbox ! grid latout */
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /*viewport height*/
+        overflow: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color:#ffffff;
+        box-shadow: 0 4px 10px  rgba(0, 0, 0, 0.1);
+    }
+    .container h1 {
+        text-align: center;
+        color: #333
+    }
+    .lista-productos {
+        padding: 10px;
+        border: 5px;
+        text-align: center;
+    }
+    .input-group {
+        display: flex;
+        gap: 10px;
+    }
+    input, button {
+        padding: 10px;
+        border:1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: aliceblue;
+        color:violet
+    }
+
+</style>
+<body>
+    <div class= "container" >
+        <h1> buscador productos </h1>
+        
+        <div class= "lista-productos">
+            <p><strong>productos disponibles</strong><span
+            id ="listaproductosspan"></span> </p>
+        </div>
+    </div>
+    <div class="input-group">
+        <input type="text" placeholder="nombre del producto"
+        id="productoinput">
+        <button id="buscar8tn">buscar </button>
+    </div>
+    <p id="resultado"></p>
+
+</body> 
+<script>
+</script>
+</html>
